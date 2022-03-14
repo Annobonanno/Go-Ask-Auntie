@@ -1,0 +1,59 @@
+<nav class="bg-white w-full md:flex fixed z-top {% if full_screen %} shadow-none {% else %} shadow-xl {% endif %} hidden h-20">
+    <div class="m-auto w-full items-center justify-evenly flex">
+        <div class="flex-initial"><a class="" href="/"></a></div>
+        {% set navPages = collections.all | eleventyNavigation %}
+        <div class="flex">
+            {%- for entry in navPages %}
+                <div class="group flex-initial mx-3 lg:mx-6">
+                    <a class="{% if entry.url == page.url %}!text-red{% endif %} hover:underline font-bold uppercase lg:text-lg xl:text-xl text-sm" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                    {%- if entry.children.length -%}
+                    <i class="ml-2 fas fa-sort-down bg-opacity-0 text-white"></i>
+                    <div class="hidden bg-none bg-opacity-0 absolute z-0 pt-12 rounded-xl shadow-none -ml-5 group-hover:block group-focus-within:block">
+                        <i class="text-gray fas fa-7x fa-sort-up left-0 top-3 z-10 absolute"></i>
+                        <div class="bg-gray rounded-xl shadow-2xl p-4">
+                            {%- for child in entry.children %}
+                               <a class="lg:text-lg relative z-top text-sm font-light block {% if loop.index > 1 %} mt-4 {% endif %} !text-left" href="{{ child.url | url }}">{{ child.title }}</a>
+                            {% endfor -%}
+                        </div>
+                    </div>
+                    {%- endif -%}
+                </div>
+            {%- endfor %}
+        </div>
+    </div>
+</nav>
+<a href="javascript:void(0);" class="icon md:hidden block" onclick="mobileNav()">
+    <i id="nav-icon" class="bg-white text-black rounded-full block mr-8 py-4 z-top leading-none fixed px-4 mt-5 text-2xl right-0 md:hidden fas fa-bars"></i>
+</a>
+<nav class="w-full bg-white fixed z-50 md:hidden">
+    <div class="w-full hidden h-screen" id="myLinks">
+        <div class="flex flex-col mt-4">
+            {%- for entry in navPages %}
+            <div class="group flex-initial sm:ml-20 ml-6 my-2">
+                <a {%- if entry.children.length %} onclick="$('#{{entry.title|slug}}').slideToggle('fast', 'linear');" {% endif %} class="{% if entry.url == page.url %}!text-yellow{% endif %} text-2xl" href="{% if entry.children.length %} # {% else %} {{entry.url | url }} {% endif %}">{{ entry.title }}</a>
+                    {%- if entry.children.length -%}
+                        <i class="ml-2 fas fa-sort-down text-white"></i>
+                        <div id="{{entry.title|slug}}" class="hidden my-2 ml-5">
+                            <div class="bg-gray rounded-xl p-4">
+                                {%- for child in entry.children %}
+                                <a class=" relative z-top text-2xl block {% if loop.index > 1 %} mt-4 {% endif %} !text-left" href="{{ child.url | url }}">{{ child.title }}</a>
+                                {% endfor -%}
+                            </div>
+                        </div>
+                    {%- endif -%}
+                </div>
+            {%- endfor %}
+        </div>
+        <div class="bottom-0 right-0"><a class="" href="/"></a></div>
+    </div>
+</nav>
+<script>
+    function mobileNav() {
+        $( "#myLinks").slideToggle( "fast", "linear", function () {
+            if ($("#nav-icon").hasClass("fa-bars")) {
+                $("#nav-icon").addClass("fa-times").removeClass("fa-bars");
+            } else {
+                $("#nav-icon").addClass("fa-bars").removeClass("fa-times");
+            }
+        });}
+</script>

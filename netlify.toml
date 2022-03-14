@@ -1,0 +1,28 @@
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  exclude = [
+    # By file Path
+    './dist/',
+    './img/',
+    './assets/'
+  ]
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+[[context.branch-deploy.plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [context.branch-deploy.plugins.inputs]
+    output_path = "reports/lighthouse.html"
+
+[build.processing.css]
+    minify = true
+[build.processing.html]
+    pretty_urls = true
+
+[build]
+  publish = "publish/"
+  command = "npm install && npm run build"
