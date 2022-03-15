@@ -1,11 +1,12 @@
-<nav class="bg-white w-full md:flex fixed z-top {% if full_screen %} shadow-none {% else %} shadow-xl {% endif %} hidden h-20">
-    <div class="m-auto w-full items-center justify-evenly flex">
+<nav class="bg-white px-12 w-full md:flex justify-between items-baseline fixed z-top {% if full_screen %} shadow-none {% else %} shadow-xl {% endif %} hidden h-20">
+    <div class="mr-auto ml-0 w-auto items-start justify-evenly flex">
         <div class="flex-initial"><a class="" href="/"></a></div>
         {% set navPages = collections.all | eleventyNavigation %}
         <div class="flex">
             {%- for entry in navPages %}
+            {% if loop.index > 1 %}<i class="fa fa-heart self-center text-red"></i>{% endif %}
                 <div class="group flex-initial mx-3 lg:mx-6">
-                    <a class="{% if entry.url == page.url %}!text-red{% endif %} hover:underline font-bold uppercase lg:text-lg xl:text-xl text-sm" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                    <a class="{% if entry.url == page.url %}!text-purple{% endif %} hover:underline font-normal capitalize lg:text-lg xl:text-xl text-sm" href="{{ entry.url | url }}">{{ entry.title }}</a>
                     {%- if entry.children.length -%}
                     <i class="ml-2 fas fa-sort-down bg-opacity-0 text-white"></i>
                     <div class="hidden bg-none bg-opacity-0 absolute z-0 pt-12 rounded-xl shadow-none -ml-5 group-hover:block group-focus-within:block">
@@ -21,6 +22,7 @@
             {%- endfor %}
         </div>
     </div>
+    {% include 'partials/widgets/social-media-icons.njk' %}
 </nav>
 <a href="javascript:void(0);" class="icon md:hidden block" onclick="mobileNav()">
     <i id="nav-icon" class="bg-white text-black rounded-full block mr-8 py-4 z-top leading-none fixed px-4 mt-5 text-2xl right-0 md:hidden fas fa-bars"></i>
