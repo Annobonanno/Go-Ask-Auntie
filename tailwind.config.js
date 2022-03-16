@@ -13,10 +13,15 @@ module.exports = {
         
         purple: { DEFAULT : '#822369'},
       },
+      backgroundImage: {
+        'map': 'url("/img/bg-map.png")',
+        'pattern': 'url("/img/bg-pattern.png")',
+      },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
+    require("tailwind-gradient-mask-image"),
   ],
 }

@@ -1,3 +1,45 @@
-<section class="h-screen bg-black w-full relative">
-<h1 class="text-5xl md:text-6xl lg:text-7xl tracking-wide uppercase text-white pt-64 mb-16 mx-auto text-center">{{heading if heading else title}}</h1>
+<section class="min-h-screen bg-navy w-full relative md:pt-48">
+   <div class="flex flex-col md:flex-row min-h-screen items-start justify-center gap-14">
+        {% img "logo.png", "logo", "h-80 flex-initial object-contain p-0" %}
+        <div class="prose prose-2xl text-white max-w-xl">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl tracking-wide font-extrabold uppercase text-teal-light mx-auto text-left my-0">Spring Up!</h1>
+            <p class="mt-0"><span class="font-bold">It’s time for new beginnings.</span> <br>
+                We have a new clinic ready to welcome you, and auntie advice to guide you on your way.
+                You are welcome here. <br>
+                You are safe here. <br><br>
+                <span class="font-bold uppercase">Ka Ni Kanichihk Mino Pimatisiwin 
+                    Sexual Health Clinic</span></p>
+                    <div class="flex md:flex-row flex-col gap-6"><a href="/contact-us" class="btn flex-1 bg-teal-light">Get In Touch</a><a href="#" class="btn flex-1 bg-red">Go Ask Auntie</a></div> 
+        </div>
+   </div>
+</section>
+<section class="w-full md:h-[50rem] bg-map bg-contain bg-purple bg-blend-overlay bg-opacity-50 flex items-end pb-16 ">
+    <div class="flex md:flex-row flex-col justify-center items-end gap-16 md:h-2/3 md:w-4/5 mx-auto">
+            <!-- this will get a google map as the background eventually, i think -->
+            <div class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 prose text-white max-w-3xl bg-red rounded-[45px] p-8 gap-10 h-fit md:h-full">
+                <div>
+                    <h3 class="text-white text-2xl font-bold uppercase p-0 m-0 mb-6">Come in for coffee, tea and conversation. Free testing available when you’re ready.</h3>
+                    <p><span class="font-bold">Where to find us</span><br>Our clinic is part of Ka Ni Kanichihk, a trusted heart of Winnipeg's Indigenous community. You’ll find us on the 1st Floor at 765 Main Street in the big red brick Social Enterprise Centre, right near the train tracks. The entrance is located on Austin Street. Ring the doorbell and our staff will greet you at the door! If you find your way here from the main building entrance, that’s okay too! </p>
+                </div>
+                <div class="h-fit">
+                    <p class="font-bold">You can lock your bike in the parking lot of the Social Enterprise Building from 7 a.m. to 4:30 p.m.</p>
+                    <p class="font-bold">Ka Ni Kanichihk Reserved parking spots available. Parking is also available on Sutherland Avenue and Austin Street.</p>
+                    <p><span class="font-bold">Bus Routes: </span><br>11,12, 15, 16, 18, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 35, 40, 41, 42, 44, 45, 46, 47, 48, 58, 65, 66, 67, 97</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-[45px] max-w-3xl p-8 text-navy h-auto md:h-full">
+                <h3 class="text-2xl font-bold mb-8">Ka Ni Kanichihk Mino Pimatisiwin Sexual Health Clinic</h3>
+                <p>
+                    #102–765 Main Street<br>
+                    Winnipeg, MB<br>
+                    R2W 3N5<br><br>
+                    <span class="font-bold">Hours of Operation:</span><br>
+                    Monday – Friday:  - TBD<br>
+                    Saturday – Sunday: Closed <br><br>
+                    <span class="font-bold">Contact Us:</span><br>
+                    Phone: 204-594-6500<br>
+                    (Phone not monitored 24/7)<br>
+                </p>
+            </div>
+    </div>
 </section>
