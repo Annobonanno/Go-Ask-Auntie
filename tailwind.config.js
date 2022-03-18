@@ -2,6 +2,19 @@ module.exports = {
   content: ["./src/**/*.{md,njk,html}"],
   theme: {
     extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme("colors.navy"),
+              '&:hover': {
+                "textDecoration": "underline",
+              },
+              "textDecoration": "none",
+            },
+          },
+        },
+      }),
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -16,6 +29,7 @@ module.exports = {
       backgroundImage: {
         'map': 'url("/img/bg-map.png")',
         'pattern': 'url("/img/bg-pattern.png")',
+        'condom': 'url("/img/bg-condom.png")',
       },
     },
   },

@@ -6,10 +6,13 @@
 }
 @layer utilities {
     .btn {
-        @apply capitalize rounded-full text-center border-4 border-white py-2 w-full md:w-fit px-8 block md:inline-block text-white no-underline font-normal my-4 hover:shadow-md hover:shadow-white;
+        @apply capitalize rounded-full !no-underline text-center border-4 border-white py-2 w-full md:w-fit px-8 block md:inline-block text-white font-normal my-4 hover:shadow-md hover:shadow-white;
       }
     
 }
 section {
     @apply md:px-0 px-4;
+}
+a {
+    @apply text-navy hover:underline no-underline;
 }

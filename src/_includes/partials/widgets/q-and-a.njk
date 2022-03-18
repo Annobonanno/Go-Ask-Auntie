@@ -3,8 +3,17 @@
         {% img "q-and-a.png", "logo", "h-24 inline" %}
         <span class="block mb-4">Do you have a question?<br class="p-0">Find Auntie’s answers here.</span>
     </div>
-    <div class="absolute top-0 right-0 -mt-16 -mr-4">
-        {% img "condom.png", "logo", "h-96 top-0 right-0" %}
+    <div class="absolute top-0 right-0 h-96 w-96 -mt-24 bg-condom bg-contain bg-no-repeat hidden md:flex items-center flex-col justify-center">
+            <h2 class="text-4xl uppercase text-white text-center">Resources</h2>
+            <a href="/resources" class="btn bg-red">Learn More</a>
     </div>
-    
+    <div class="p-4">
+        <div class="grid md:grid-cols-2 gap-6">
+            {% for question in questions.questions %}
+            <div>
+                {% include 'partials/questions/single.njk' %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>

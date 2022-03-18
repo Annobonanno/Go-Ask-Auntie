@@ -1,0 +1,24 @@
+{
+    "resources": [
+        {
+            "title":"Nine Circles Community Health Centre",
+            "link":"https://ninecircles.ca/"
+        },
+        {
+            "title":"The Manitoba Harm Reduction Network",
+            "link":"https://mhrn.ca/"
+        },
+        {
+            "title":"Two-Spirited People of Manitoba Inc.",
+            "link":"https://twospiritmanitoba.ca/"
+        },
+        {
+            "title":"Sexuality Education Resource Centre",
+            "link":"https://serc.mb.ca/"
+        },
+        {
+            "title":"Klinic Community Health",
+            "link":"https://klinic.mb.ca/"
+        }
+    ]
+}

@@ -6,12 +6,19 @@ eleventyNavigation:
 layout: pages/inner.njk
 title: Resources
 data: 
-prose: false
-color: 
+prose: true
+color: purple
 meta_desc: the description of the meta tag
 meta_author: remove this tag unless you wish to overwrite the default author
 footer: true 
-bg: 
+instagram: true
+bg: teal-light
 full_screen: false 
 ---
-
+<ul class="list-none !pl-0 ml-0">
+    {% for resource in resources.resources %}
+    <li class="pl-0 ml-0">
+        <a href="{{resource.link}}" target="_blank">{{resource.title}}</a>
+    </li>
+    {% endfor %}
+</ul>

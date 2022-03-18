@@ -4,14 +4,16 @@ eleventyNavigation:
     title: Q+A  
     order: 2
 layout: pages/inner.njk
-title: Q+A
+title: 
 data: 
 prose: false
 color: 
 meta_desc: the description of the meta tag
 meta_author: remove this tag unless you wish to overwrite the default author
 footer: true 
-bg: 
+bg: pattern bg-cover bg-teal-light
 full_screen: false 
 ---
-
+<section class="px-4">
+{% include 'partials/widgets/q-and-a.njk' %}
+</section>

@@ -5,6 +5,10 @@
             "answer":"Mino Pimatisiwin means 'the good life.' We believe all people deserve access to culturally safe health care so they can live a good life."
         },
         {
+            "question":"",
+            "answer":""
+        },
+        {
             "question":"What types of testing is available at the clinic?",
             "answer":"First, we’ll ask about any specific symptoms or concerns that brought you to the clinic. Next, we’ll decide where we go from there with you. Testing is typically available for HIV, Hep B and C, syphilis, chlamydia, gonorrhea, bacterial vaginosis and trichomoniasis. We also have pregnancy tests."
         },
@@ -25,27 +29,5 @@
             "answer":"We’d love to meet them, too. Make it a date!"
         }
         
-    ],
-    "resources": [
-        {
-            "title":"Nine Circles Community Health Centre",
-            "link":"https://ninecircles.ca/"
-        },
-        {
-            "title":"The Manitoba Harm Reduction Network",
-            "link":"https://mhrn.ca/"
-        },
-        {
-            "title":"Two-Spirited People of Manitoba Inc.",
-            "link":"https://twospiritmanitoba.ca/"
-        },
-        {
-            "title":"Sexuality Education Resource Centre",
-            "link":"https://serc.mb.ca/"
-        },
-        {
-            "title":"Klinic Community Health",
-            "link":"https://klinic.mb.ca/"
-        }
     ]
 }
