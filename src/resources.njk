@@ -15,6 +15,7 @@ instagram: true
 bg: teal-light
 full_screen: false 
 ---
+<div class="grid md:grid-cols-2 grid-cols-1 grid-rows-1">
 <ul class="list-none !pl-0 ml-0">
     {% for resource in resources.resources %}
     <li class="pl-0 ml-0">
@@ -22,3 +23,7 @@ full_screen: false
     </li>
     {% endfor %}
 </ul>
+<div class="hidden md:block">
+    {% img "resources.png", "Resources", "object-contain" %}
+</div>
+</div>

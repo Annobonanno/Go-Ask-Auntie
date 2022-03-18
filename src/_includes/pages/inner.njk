@@ -4,8 +4,8 @@ layout: base.njk
 color: gray
 bg: white
 ---
-<section class="w-full pb-24 bg-{{bg}} {% if full_screen %} min-h-screen pb-10 {% endif %}">
-    <div class="{% if prose %} prose prose-sm md:prose-lg lg:prose-xl max-w-5xl {% endif %} {% if full_screen %} sm:mx-auto mx-6 {% else %} mx-6 lg:mx-auto {% endif %} pt-12 lg:pt-32 text-gray">
+<section class="w-full pb-24 bg-{{bg}} {% if full_screen %} min-h-screen pb-10 {% endif %} relative">
+    <div class="{% if prose %} prose prose-sm md:prose-lg lg:prose-xl max-w-5xl {% endif %} {% if full_screen %} sm:mx-auto mx-6 {% else %} mx-6 lg:mx-auto {% endif %} pt-12 lg:pt-32 text-gray relative">
         <h1 class="text-5xl font-extrabold md:text-6xl lg:text-7xl tracking-wide uppercase text-{{color}} mb-16 mx-auto text-left">{{heading if heading else title}}</h1>
         {{ content | safe }}
     </div>

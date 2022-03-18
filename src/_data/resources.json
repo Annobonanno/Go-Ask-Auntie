@@ -19,6 +19,38 @@
         {
             "title":"Klinic Community Health",
             "link":"https://klinic.mb.ca/"
+        },
+        {
+            "title":"Aboriginal Health and Wellness Centre",
+            "link":"http://ahwc.ca/"
+        },
+        {
+            "title":"Ma Mawi Wi Chi Itata Centre",
+            "link":"https://www.mamawi.com/"
+        },
+        {
+            "title":"Women’s Health Clinic",
+            "link":"https://womenshealthclinic.org/"
+        },
+        {
+            "title":"Mount Carmel Clinic",
+            "link":"https://www.mountcarmel.ca/"
+        },
+        {
+            "title":"Street Connections Service Map ",
+            "link":"https://streetconnections.ca//service_map.php"
+        },
+        {
+            "title":"Teen Clinics (ages 13-22)",
+            "link":"https://teenclinic.ca/"
+        },
+        {
+            "title":"First Nations Health and Social Secretariat of Manitoba (FNHSSM)",
+            "link":"https://www.fnhssm.com/"
+        },
+        {
+            "title":"Winnipeg Regional Health Authority Indigenous Health",
+            "link":"https://wrha.mb.ca/indigenous-health/"
         }
     ]
 }

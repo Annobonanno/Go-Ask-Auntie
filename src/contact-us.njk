@@ -15,7 +15,7 @@ bg: navy
 full_screen: false 
 instagram: true
 ---
-<div class="grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-2 justify-center items-center gap-6">
+<div class="grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-2 justify-center items-center gap-6 relative">
     <div class="h-full">
         <form name="contact" class="my-8 shadow-none !p-0 !m-0" action="" netlify>
             <div class="grid grid-cols-1 gap-0">
@@ -29,7 +29,10 @@ instagram: true
             </div>
         </form>
     </div>
-    <div class="h-full bg-purple rounded-[45px]">
+    <div class="h-full bg-purple rounded-[45px] relative overflow-visible z-10">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2569.629393890589!2d-97.13510668444954!3d49.90576077940403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea71696f6fa0d3%3A0x37221bb00bc1836f!2s765%20Main%20St%2C%20Winnipeg%2C%20MB%20R2W%203N5!5e0!3m2!1sen!2sca!4v1647622605321!5m2!1sen!2sca" class="w-full h-full rounded-[45px] opacity-80" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
+    
 </div>
+{% img "sperm.png", "sperm", "object-contain absolute top-24 right-10 h-64 m-0 z-0" %}
+{% img "frog.png", "frog", "object-contain absolute bottom-0 right-10 h-64 !-mb-40 z-20" %}
