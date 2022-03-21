@@ -30,6 +30,10 @@ module.exports = {
         'map': 'url("/img/bg-map.png")',
         'pattern': 'url("/img/bg-pattern.png")',
         'condom': 'url("/img/bg-condom.png")',
+        'hero': 'url("/img/bg-hero.png")',
+      },
+      fontFamily: {
+        'guy': ['Luckiest Guy', 'cursive', ...'fontFamily.sans'],
       },
     },
   },

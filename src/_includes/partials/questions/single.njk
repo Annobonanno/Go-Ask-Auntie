@@ -1,7 +1,7 @@
-<div class="prose my-8">
+<div class="prose my-4">
     {% if question.question != "" %}<p class="my-4 font-bold text-navy">Q: {{ question.question }}</p>{% endif %}
     {% if question.answer != "" %}
-        <p class="my-4 font-extrabold uppercase text-red text-xl">AUNTIE:</p>
-        <p class="my-4 text-red-900">{{ question.answer }}</p>
+        <p class="!m-0 pb-0 font-extrabold uppercase text-red text-xl">AUNTIE:</p>
+        <p class="mb-4 !mt-1 pt-0 text-red-900">{{ question.answer }}</p>
     {% endif %}
 </div>

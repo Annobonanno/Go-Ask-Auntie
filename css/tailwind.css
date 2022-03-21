@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: "Luckiest Guy";
+    src: url('../fonts/LuckiestGuy-Regular.ttf') format('truetype');
+} 
+
 @layer base {
 }
 @layer utilities {
@@ -15,4 +20,7 @@ section {
 }
 a {
     @apply text-navy hover:underline no-underline;
+}
+h1, h2, h3, h4, h5, h6 {
+    @apply font-guy font-normal;
 }
