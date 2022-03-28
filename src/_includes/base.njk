@@ -10,11 +10,11 @@ facebook: https://www.facebook.com/Goaskauntieca
 instagram: https://www.instagram.com/goaskauntieca/
 data: data
 ---
-
+<!-- bg-pattern -->
 <!DOCTYPE html>
 <html lang="en">
 {% include "partials/head.njk" %}
-<body class="relative bg-{{bg}}">
+<body class="relative bg-{{ bg }}">
     {% include 'partials/header.njk' %}
     {{ content | safe }}
     {% include ('partials/footer.njk' if footer else 'blank.njk') %}
