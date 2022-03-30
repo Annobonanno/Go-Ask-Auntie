@@ -33,7 +33,7 @@ module.exports = {
         'hero': 'url("/img/bg-hero.png")',
       },
       fontFamily: {
-        'guy': ['Luckiest Guy', 'cursive', ...'fontFamily.sans'],
+        passionOne: ["Passion One", "cursive"],
       },
     },
   },
