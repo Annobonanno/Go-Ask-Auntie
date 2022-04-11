@@ -12,10 +12,7 @@
             "question":"What types of testing is available at the clinic?",
             "answer":"First, we’ll ask about any specific symptoms or concerns that brought you to the clinic. Next, we’ll decide where we go from there with you. Testing is typically available for HIV, Hep B and C, syphilis, chlamydia, gonorrhea, bacterial vaginosis and trichomoniasis. We also have pregnancy tests."
         },
-        {
-            "question":"Do I need an appointment to come to the clinic?",
-            "answer":"You can get an appointment when you call us at XXX-XXXX or feel free to come in when it works for you! Walk-ins welcome during clinic hours from XXa.m. to XXp.m. Monday to Friday."
-        },
+        
         {
             "question":"Do you provide traditional medicines?",
             "answer":"We have traditional medicines available, and our [Knowledge Keepers, Elders, grandmothers and aunties… ] are there to provide guidance in traditional healing."
