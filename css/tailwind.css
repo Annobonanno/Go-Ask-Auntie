@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-
 @layer base {
 }
 @layer utilities {
@@ -19,5 +17,5 @@ a {
     @apply text-navy hover:underline no-underline;
 }
 h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
+    @apply font-semibold font-passion-one;
 }
