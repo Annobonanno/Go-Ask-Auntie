@@ -4,7 +4,7 @@
         {% set navPages = collections.all | eleventyNavigation %}
         <div class="flex">
             {%- for entry in navPages %}
-            {% if loop.index > 1 %}<i class="fa fa-heart self-center {% if entry.title ==  'Q+A' %}!text-red {% endif %} {% if entry.title == 'Contact Us' %}!text-teal-light {% else %}{% endif %} text-teal"></i>{% endif %}
+            {% if loop.index > 1 %}<i class="fa fa-heart self-center {% if entry.title ==  'Q+A' %}!text-red {% endif %} {% if entry.title ==  'Cedar Bath' %}!text-navy {% endif %} {% if entry.title == 'Contact Us' %}!text-teal-light {% else %}{% endif %} text-teal"></i>{% endif %}
                 <div class="group flex-initial mx-3 lg:mx-6">
                     <a class="{% if entry.url == page.url %}!text-purple{% endif %} hover:underline font-normal capitalize lg:text-lg xl:text-xl text-sm" href="{{ entry.url | url }}">{{ entry.title }}</a>
                     {%- if entry.children.length -%}
