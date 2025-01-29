@@ -9,13 +9,13 @@ twitter: https://twitter.com/goaskauntieca
 facebook: https://www.facebook.com/Goaskauntieca
 instagram: https://www.instagram.com/goaskauntieca/
 data: data
-bg: pattern bg-teal-light bg-contain bg-reapeat-y bg-top bg-overlay
+bg: bg-pattern bg-teal-light bg-contain bg-reapeat-y bg-top bg-overlay
 ---
 <!-- bg-pattern bg-teal-light bg-contain bg-reapeat-y bg-top bg-overlay -->
 <!DOCTYPE html>
 <html lang="en">
 {% include "partials/head.njk" %}
-<body class="relative bg-pattern bg-teal-light bg-contain bg-reapeat-y bg-top bg-overlay">
+<body class="relative {{ bg }}">
     {% include 'partials/header.njk' %}
     {{ content | safe }}
     {% include ('partials/footer.njk' if footer else 'blank.njk') %}

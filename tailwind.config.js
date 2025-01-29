@@ -31,6 +31,8 @@ module.exports = {
         'pattern': 'url("/img/bg-pattern.png")',
         'condom': 'url("/img/bg-condom.png")',
         'hero': 'url("/img/bg-hero.png")',
+        'wwor': 'url("/img/bg-wwor.png")',
+        'wwor-body': 'url("/img/bg-wwor-body.png")',
       },
       fontFamily: {
         'passion-one': ["Passion One", "cursive"],
