@@ -1,55 +1,120 @@
 <section class="md:h-screen bg-navy bg-hero bg-contain bg-no-repeat bg-bottom w-full relative md:pt-28">
-   <div class="flex flex-col min-h-screen items-center justify-center gap-2">
+    <div class="flex flex-col min-h-screen items-center justify-center gap-2">
         <div class="prose prose-2xl text-white max-w-none text-center text-3xl pb-2 font-passion-one">
-            <p class="uppercase text-2xl md:text-3xl lg:text-5xl pb-2 md:pb-0 mb-0">Ka Ni Kanichihk Mino Pimatisiwin</p>
-            <h1 class="text-5xl lg:text-7xl tracking-wide font-bold uppercase text-red mx-auto md:text-left my-0 py-0">Sexual Wellness Lodge</h1>
+            <p class="uppercase text-2xl md:text-3xl lg:text-5xl pb-2 md:pb-0 mb-0">
+                Ka Ni Kanichihk Mino Pimatisiwin
+            </p>
+
+            <h1 class="text-5xl lg:text-7xl tracking-wide font-bold uppercase text-red mx-auto md:text-left my-0 py-0">
+                Sexual Wellness Lodge
+            </h1>
+
             <p class="py-4 my-0">We're ready to welcome you.</p>
-            <p class="uppercase text-teal font-bold text-4xl my-0 py-0 pb-4">QUESTIONS?</p>
+
+            <p class="uppercase text-teal font-bold text-4xl my-0 py-0 pb-4">
+                QUESTIONS?
+            </p>
         </div>
+
         <div class="flex flex-row max-w-none justify-between w-full mx-auto px-0 h-80">
             {% img "home-left.png", "stickers", "h-96 flex-1 object-contain lg:flex hidden" %}
             {% img "logo.png", "logo", "max-h-80 flex-1 object-contain p-0 relative z-10" %}
             {% img "home-right.png", "stickers", "h-96 flex-1 object-contain lg:flex hidden" %}
         </div>
-            
-   </div>
+    </div>
 </section>
-<section class="w-full md:h-[52rem] bg-map bg-contain bg-purple bg-blend-overlay bg-opacity-50 flex items-end pb-16 pt-8 md:pt-0">
-    <div class="flex md:flex-row flex-col justify-center items-end gap-16 md:h-2/3 xl:w-4/5 mx-auto">
-            <!-- this will get a google map as the background eventually, i think -->
-            <div class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 prose text-white max-w-3xl bg-red rounded-[45px] p-4 px-6 gap-10 h-fit md:h-full">
-                <div>
-                    <h3 class="text-white text-7xl md:text-9xl font-bold uppercase text-center p-0 m-0">Free</h3><p class="text-navy font-Staatliches uppercase text-3xl text-center font-extrabold mb-0 mt-0 p-0">stbbi testing</p>
-                    <p class="mt-1"><span class="font-bold">Where to find us</span><br>Our clinic is part of Ka Ni Kanichihk, a trusted heart of Winnipeg's Indigenous community. You’ll find us on the 1st Floor at 765 Main Street in the big red brick Social Enterprise Centre, right near the train tracks. The entrance is located on Austin Street. Ring the doorbell and our staff will greet you at the door! If you find your way here from the main building entrance, that’s okay too! </p>
-                </div>
-                <div class="h-fit">
-                    <p class="font-bold">You can lock your bike in the parking lot of the Social Enterprise Building from 7 a.m. to 4:30 p.m.</p>
-                    <p class="font-bold">Ka Ni Kanichihk Reserved parking spots available. Parking is also available on Sutherland Avenue and Austin Street.</p>
-                    <p><span class="font-bold">Bus Routes: </span>
-                    <br>D17  Talbot and Selkirk
-                    <br>31 Waterfront and North Main
-                    <br>FX2 St. Vital Centre, Garden City Centre 
-                    <br>FX3 Redonda and Pandora NB, Sturgeon and Murray Park SB
-                    <br>43 Gateway, RRC Polytech 
-                    </p>
-                </div>
-            </div>
-            <div class="bg-white rounded-[45px] max-w-lg p-8 text-navy h-auto md:h-full">
-                <h3 class="text-lg font-semibold font-sans mb-2">Ka Ni Kanichihk Mino Pimatisiwin Sexual Wellness Lodge</h3>
-                <p>
-                    #102–765 Main Street<br>
-                    Winnipeg, MB<br>
-                    R2W 3N5<br><br>
-                    <span class="font-bold">Hours of Operation:</span><br>
-                    Tuesday 11 a.m. - 3 p.m.<br>
-                    Thursday 11 a.m. - 3 p.m.<br><br>
-                    <span class="font-bold">Contact Us:</span><br>
-                    Phone: 204-594-6500<br>
-                    (Phone not monitored 24/7)<br>
-                    Email: <a href="mailto:info@kanikanichihk.ca">info@kanikanichihk.ca</a><br><br>
-                    <span class="font-bold">We’re Hiring:</span></span><br>
-                    Find out more <a class="underline" href="https://www.kanikanichihk.ca/employment/">here</a>.<br>
+
+<section class="w-full min-h-[52rem] bg-map bg-contain bg-purple bg-blend-overlay bg-opacity-50 py-16">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-16 xl:w-4/5 mx-auto items-stretch px-6">
+
+        <!-- This may eventually use a live Google Map as the background. -->
+        <div class="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 prose text-white max-w-3xl bg-red rounded-[45px] p-4 px-6 gap-10 h-fit xl:h-full">
+
+            <div>
+                <h3 class="text-white text-7xl md:text-9xl font-bold uppercase text-center p-0 m-0">
+                    Free
+                </h3>
+
+                <p class="text-navy font-Staatliches uppercase text-3xl text-center font-extrabold mb-0 mt-0 p-0">
+                    STBBI testing
+                </p>
+
+                <p class="mt-1">
+                    <span class="font-bold">Where to find us</span><br>
+                    Our clinic is part of Ka Ni Kanichihk, a trusted heart of Winnipeg's Indigenous community. You’ll find us on the 1st Floor at 765 Main Street in the big red brick Social Enterprise Centre, right near the train tracks. The entrance is located on Austin Street. Ring the doorbell and our staff will greet you at the door! If you find your way here from the main building entrance, that’s okay too!
                 </p>
             </div>
+
+            <div class="h-fit">
+                <p class="font-bold">
+                    You can lock your bike in the parking lot of the Social Enterprise Building from 7 a.m. to 4:30 p.m.
+                </p>
+
+                <p class="font-bold">
+                    Ka Ni Kanichihk reserved parking spots are available. Parking is also available on Sutherland Avenue and Austin Street.
+                </p>
+
+                <p>
+                    <span class="font-bold">Bus Routes:</span>
+                    <br>D17 Talbot and Selkirk
+                    <br>31 Waterfront and North Main
+                    <br>FX2 St. Vital Centre, Garden City Centre
+                    <br>FX3 Redonda and Pandora NB, Sturgeon and Murray Park SB
+                    <br>43 Gateway, RRC Polytech
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-[45px] max-w-lg p-8 text-navy h-auto xl:h-full">
+            <h3 class="text-lg font-semibold font-sans mb-2">
+                Ka Ni Kanichihk Mino Pimatisiwin Sexual Wellness Lodge
+            </h3>
+
+            <p>
+                #102–765 Main Street<br>
+                Winnipeg, MB<br>
+                R2W 3N5<br><br>
+
+                <span class="font-bold">Hours of Operation:</span><br>
+                Tuesday 11 a.m. – 3 p.m.<br>
+                Thursday 11 a.m. – 3 p.m.<br><br>
+
+                <span class="font-bold">Contact Us:</span><br>
+                Phone: 204-594-6500<br>
+                (Phone not monitored 24/7)<br>
+                Email:
+                <a href="mailto:info@kanikanichihk.ca">
+                    info@kanikanichihk.ca
+                </a>
+                <br><br>
+
+                <span class="font-bold">We’re Hiring:</span><br>
+                Find out more
+                <a class="underline" href="https://www.kanikanichihk.ca/employment/">
+                    here
+                </a>.
+            </p>
+        </div>
+
+        <div class="bg-teal-light rounded-[45px] p-8 text-navy h-auto xl:col-span-2">
+            <h3 class="text-lg font-semibold font-sans mb-4">
+                The Lodge Also Offers
+            </h3>
+
+            <ul class="list-disc pl-6 mb-6">
+                <li>HIV 101</li>
+                <li>Naloxone training</li>
+                <li>Safer sex talks</li>
+            </ul>
+
+            <p>
+                To invite the Lodge to your organization, email
+                <a class="underline" href="mailto:amink@kanikanichihk.ca">
+                    amink@kanikanichihk.ca
+                </a>
+                for more information.
+            </p>
+        </div>
+
     </div>
 </section>
